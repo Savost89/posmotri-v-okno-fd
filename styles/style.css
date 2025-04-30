@@ -55,8 +55,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   max-inline-size: 1140px;
-  top: 133px;
-  left: 30px;
 }
 
 .result__video-container {
@@ -145,7 +143,7 @@ ol {
   border: 1px solid rgb(255, 255, 255);
 }
 
-.search-form__label:hover .search-form__labeltext {
+.search-form__label:hover .search-form__labe-ltext {
   text-decoration: underline;
 }
 
@@ -192,15 +190,12 @@ ol {
 }
 
 .title {
-  margin-block-end: 24px;
+  margin-block-end: 20px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  width: 259px;
-  height: 210px;
-  
 }
 
 .content__accent {
@@ -208,13 +203,12 @@ ol {
 
 }
 
-.content__list {
+.content__list-container {
   position: relative;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   block-size: 300px;
-  padding-top: 10px;
   border: 2px;
 }
 
@@ -226,6 +220,7 @@ ol {
   margin-block: 1px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  display: block; 
 }
 
 .content__card-link:active {
@@ -256,11 +251,14 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  inline-size: 200px;
+  max-width: 200px; 
+  width: 100%;
+  padding-left: 5px;
+  
 }
 
 .content__video-card-title {
-  padding: 4px 0;
+  padding: 2px 0;
   overflow: hidden;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -298,7 +296,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+  background: rgb(217 217 217 / 4%);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
